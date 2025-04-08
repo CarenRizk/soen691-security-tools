@@ -1,2 +1,6 @@
 semgrep
 bandit
+flake8
+dlint
+pyre-check
+scikit-learn

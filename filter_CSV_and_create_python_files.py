@@ -14,7 +14,7 @@ df_combined = pd.concat(dfs, ignore_index=True)
 df_python = df_combined[df_combined["file_extension"] == "py"]
 
 # Output directory
-output_dir = "python_vuln_files"
+output_dir = "python_non_vuln_files"
 os.makedirs(output_dir, exist_ok=True)
 
 # Save each Python file
