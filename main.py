@@ -7,8 +7,8 @@ from tools.semgrep_runner import run_semgrep
 from tools.bandit_runner import run_bandit
 
 TOOL_MAP = {
-    "semgrep": ("semgrep_results.csv", run_semgrep),
-    "bandit": ("bandit_results.csv", run_bandit)
+    "semgrep": ("semgrep_results_non_vuln.csv", run_semgrep),
+    "bandit": ("bandit_results_non_vuln.csv", run_bandit)
 }
 
 def parse_args():

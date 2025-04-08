@@ -21,7 +21,7 @@ os.makedirs(output_dir, exist_ok=True)
 for _, row in df_python.iterrows():
     file_id = row["file_id"]
     filename = os.path.basename(row["filename"])
-    code = row["file_before"]
+    code = row["file_after"]
 
     safe_name = f"{file_id}_{filename}"
     output_path = os.path.join(output_dir, safe_name)
